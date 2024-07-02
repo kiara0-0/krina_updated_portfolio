@@ -1,0 +1,485 @@
+
+body {
+  margin: 0;
+  color: #822659;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.welcome {
+  color: #eaffd0;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+/* .headerlinks1{
+  color:#eaffd0;
+  font-size: 18px;
+position: absolute;
+right: 50px;
+font-family: 'Roboto Slab', serif;
+}
+.headerlinks1:hover{
+  	color:purple;
+}
+.headerlinks2{
+  color:#eaffd0;
+  font-size: 18px;
+position: absolute;
+right: 130px;
+font-family: 'Roboto Slab', serif;
+}
+.headerlinks2:hover{
+  	color:purple;
+}
+.headerlinks3{
+  color:#eaffd0;
+  font-size: 18px;
+position: absolute;
+right: 230px;
+font-family: 'Roboto Slab', serif;
+}
+.headerlinks3:hover{
+  	color:purple;
+} */
+
+.navbar {
+  background-color: #040D12;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 500;
+}
+
+.nav-link {
+  color: #eaffd0;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #CA8787;
+}
+.logo{
+  width:15%;
+  height: 15%;
+  top: 5px;
+  position: absolute;
+  left: 30px;
+}
+.intro {
+  color: #eaffd0;
+}
+
+.introduction {
+  text-align: center;
+  /* text-align: justify; */
+  line-height: 2;
+}
+
+hr {
+  border: dotted #ff5e78 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+}
+
+.btn {
+  background-color: #ff5bb0;
+  border-radius: 16px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ef027d;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Sacramento', cursive;
+  color: #eaffd0;
+  margin: 20px auto 0 auto;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Kiwi Maru', serif;
+  color: #822659;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.topcontainer {
+  background-color: #040D12;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  position: relative;
+  height: 587px; /* Increase height to contain images */
+}
+.detail{
+  margin-left: 8%;
+  margin-top: 15%;
+  text-align: left;
+  color:#eaffd0;
+}
+
+.detail h1{
+  /* font-size: 50px; */
+  font-family:  "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.detail p{
+  /* text-align: ; */
+  /* text-align: justify; */
+  /* text-shadow: #822659; */
+  font-size: 20px;
+  /* margin: 0 auto; */
+}
+
+.detail p .description{
+  font-size: 10px;
+}
+/* 
+.description{
+  font-size: 15px;
+} */
+
+span{
+  color: #CA8787;
+}
+
+.picture {
+  position: absolute;
+  /* bottom: 0; */
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.splash {
+  width: 400px; /* Set the desired width */
+  height: auto;
+  position: relative;
+}
+
+.krina {
+  width: auto; /* Set the desired width */
+  height: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width:1220px) {  
+  .detail,.picture{
+    /* text-align: ; */
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:900px) {  
+  .picture{
+    /* text-align: ; */
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width:670px) {  
+  .picture{
+    /* text-align: ; */
+    align-items: center;
+    max-width: 40%;
+  }
+}
+
+.middlecontainer {
+  background-color: #FCFFE0;
+  padding: 20px;
+}
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 64px;
+}
+
+.education{
+  justify-content: center;
+  align-items: center;
+  /* margin: 20px auto; */
+    padding: 20px;
+}
+
+.education-grid {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.education-item {
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.education-logo {
+  width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.education-desc {
+  font-size: 16px;
+  color: #1D3C45;
+}
+
+@media (max-width: 900px) {
+  .education-item {
+      flex: 1 1 45%;
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .education-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
+
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.MNIT_logo{
+  display: flex;
+  width: 30%;
+  height: 30%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .MNIT_logo{
+    padding: 10;
+    display: flex;
+    width: 30%;
+    height: 30%;
+  }
+}
+
+.MNIT_desc{
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  display: flex;
+} */
+.carousel-container {
+  
+  width: 50%;
+  padding-block: 16px 32px;
+  /* margin: 16px 32px; */
+  overflow-x: auto;
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 12px;
+  width: calc(100% - 50px);
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #b1b3b399;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #29AB87;
+}
+
+.carousel-container::-webkit-scrollbar-track-piece:start {
+  background: #29AB87;
+}
+
+.carousel-slide {
+  flex: 1 0 30%;
+  aspect-ratio: 1;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #bae; */
+  scroll-snap-align: center;
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    flex: 1 0 90%;
+  }
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.bottomcontainer {
+  background-color: #fce38a;
+  padding: 50px 0 20px 0;
+  margin: 0;
+  width:100%;
+}
+
+a {
+  color: #822659;
+  font-family: 'Roboto Slab', serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e36bae;
+}
+
+.skill-row {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 110px;
+  text-align: left;
+  line-height: 2;
+}
+
+.coding {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.paint {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.propic {
+  /* border-radius: 50%;
+  border: 5px solid #fce38e; */
+  top:0px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .bottomcontainer {
+    /* padding: 20px; */
+    width: 100%;
+  }
+
+  .skill-row {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  
+
+  .btn {
+    width: 80%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
