@@ -16,6 +16,10 @@
 <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
   </head>
   </head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
   <body>
 <div class="topcontainer">
   <!-- <div class="logo">
@@ -30,7 +34,7 @@
   </nav>
   
   <div class="detail">
-    <h1>Hi! I am <span>&ltKrina Sheth&gt</Krina></span></h1>
+    <h1 class="animated-text">Hi! I am <span>&ltKrina Sheth&gt</Krina></span></h1>
     <p>Welcome to my Portfolio Site!</p>
     <p class="description">I am a Student and Developer. </p>
   </div>
@@ -52,22 +56,6 @@
   <div id="education"class="education">
     <!-- <img class="propic" src="images/logo.png.png" height="30%" width="30%" alt=""> -->
     <h2><strong>My Education</strong></h2>
-    <!-- <div class="flex-container">
-      <div class="MNIT_logo"><img src="images/nyupng.jpeg"></div>
-      <div class="MNIT_desc">New York University, Courant Institute of Mathematical Sciences<br>
-        September 2023 - May 2025<br>
-        Master's of Science in Computer Science<br>
-        GPA: 3.39/4.00</div>
-      <div>3</div>
-    </div>
-  <div class="flex-container">
-    <div class="MNIT_logo"><img src="images/mnit.png"></div>
-    <div class="MNIT_desc">Malaviya National Institute of Technology, Jaipur<br>
-      July 2019 - May 2023<br>
-      Bachelor of Engineering in Computer Science<br>
-      GPA: 8.05/10.00</div>
-    <div>3</div>
-  </div> -->
   <div class="education-grid">
     <div class="education-item">
         <img src="images/nyupng.jpeg" class="education-logo">
@@ -75,7 +63,7 @@
             New York University, Courant Institute of Mathematical Sciences<br>
             September 2023 - May 2025<br>
             Master's of Science in Computer Science<br>
-            GPA: 3.39/4.00
+            GPA: 3.56/4.00
         </div>
     </div>
     <div class="education-item">
@@ -88,48 +76,63 @@
         </div>
     </div>
 </div>
-  <hr>
+<hr>  
   <div id="projects" class="skills">
     <h2><strong>My Projects</strong></h2>
-  <div class="carousel-container">
-    <div class="carousel-slide">
-      <a href="https://github.com/kiara0-0/Crew-AI-Health-Fitness-Crew">
-      <div class="card">
-      <img src="images/computer.png" alt="Avatar" style="width:100%">
-      <div class="container" >
-      <h4><b>Personal Health and Fitness Crew </b></h4>
-      <p></p>
+    
+    <div class="carousel-wrapper">
+      <button id="scroll-left" class="scroll-btn">❮</button>
+      
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <a href="https://github.com/kiara0-0/Crew-AI-Health-Fitness-Crew">
+            <div class="card">
+              <img src="images/computer.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>Personal Health and Fitness Crew</b></h4>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="carousel-slide">
+          <a href="https://github.com/kiara0-0/LangChain-Personal-Chatbot">
+            <div class="card">
+              <img src="images/computer.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>Custom Chatbot using LangChain</b></h4>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="carousel-slide">
+          <a href="https://github.com/kiara0-0/Unemployment-Rate-Prediction">
+            <div class="card">
+              <img src="images/computer.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>Unemployment Rate Prediction</b></h4>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="carousel-slide">
+          <a href="https://kiara0-0.github.io/krina-s-personal-website/">
+            <div class="card">
+              <img src="images/computer.png" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h4><b>Previous Personal Website</b></h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+      <button id="scroll-right" class="scroll-btn">❯</button>
     </div>
   </div>
-</a>
-</div>
-      <div class="carousel-slide">
-      <a href="https://github.com/kiara0-0/LangChain-Personal-Chatbot">
-      <div class="card">
-      <img src="images/computer.png" alt="Avatar" style="width:100%">
-      <div class="container" >
-      <h4><b>Custom Chatbot using LangChain</b></h4>
-      <p></p>
-    </div>
-  </div>
-</a>
-</div>
-    <div class="carousel-slide">
-      <a href="https://github.com/kiara0-0/Unemployment-Rate-Prediction"><div class="card">
-      <img src="images/computer.png" alt="Avatar" style="width:100%">
-      <div class="container">
-      <h4><b>Unemployment Rate Prediction</b></h4>
-      <p></p>
-    </div>
-  </div></a></div>
-    <div class="carousel-slide"><a href="https://kiara0-0.github.io/krina-s-personal-website/"><div class="card" >
-      <img src="images/computer.png" alt="Avatar" style="width:100%">
-      <div class="container">
-      <h4><b>Previous Personal Website</b></h4>
-      <p></p>
-    </div>
-  </div></a></div>
-  </div>
+  
 <hr>
   <div id="contact" class="contact-me">
     <h2><strong>Get In Touch with me!</strong></h2>
